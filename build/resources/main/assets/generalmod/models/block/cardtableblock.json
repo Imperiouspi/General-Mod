@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+	"particle": "generalmod:block/cardtableactive",
+	"down": "generalmod:block/darkstone",
+	"up": "generalmod:block/tabletop",
+	"east": "generalmod:block/cardtableactive",
+	"west": "generalmod:block/cardtableactive",
+	"north": "generalmod:block/cardtableactive",
+	"south": "generalmod:block/cardtableactive"
+  }
+}
