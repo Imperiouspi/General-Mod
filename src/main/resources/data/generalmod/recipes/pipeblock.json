@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "i i",
+    "iii",
+    "i i"
+  ],
+  "key": {
+    "i": {
+      "item": "minecraft:iron"
+    }
+  },
+  "result": {
+    "item": "generalmod:pipeblock"
+  }
+}
