@@ -1,4 +1,13 @@
 
 # Default ignored files
 /workspace.xml
-runConfigurations/
+.idea
+.gradle
+build
+gradle
+run
+/build.gradle
+/gradle.properties
+/gradlew
+/gradle.bat
+.dll

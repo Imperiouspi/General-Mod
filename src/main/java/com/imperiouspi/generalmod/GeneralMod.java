@@ -2,6 +2,7 @@ package com.imperiouspi.generalmod;
 
 import com.imperiouspi.generalmod.blocks.CardTableBlock;
 import com.imperiouspi.generalmod.blocks.ModBlocks;
+import com.imperiouspi.generalmod.blocks.PipeBlock;
 import com.imperiouspi.generalmod.items.CardItem;
 import com.imperiouspi.generalmod.setup.ClientProxy;
 import com.imperiouspi.generalmod.setup.IProxy;
@@ -56,6 +57,7 @@ public class GeneralMod {
         public static void onBlocksRegistry(final RegistryEvent.Register<Block> event) {
             //Block Registry
             event.getRegistry().register(new CardTableBlock());
+            event.getRegistry().register(new PipeBlock());
         }
 
         @SubscribeEvent
@@ -63,7 +65,7 @@ public class GeneralMod {
             //Block Item Registry
             Item.Properties prop = new Item.Properties().group(setup.itemGroup);
             event.getRegistry().register(new BlockItem(ModBlocks.CARDTABLEBLOCK, prop).setRegistryName("cardtableblock"));
-
+            event.getRegistry().register(new BlockItem(ModBlocks.PIPE, prop).setRegistryName("pipeblock"));
             //Item Registry
             event.getRegistry().register(new CardItem());
         }
