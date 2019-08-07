@@ -9,5 +9,5 @@ run
 /build.gradle
 /gradle.properties
 /gradlew
-/gradle.bat
+/gradlew.bat
 .dll
