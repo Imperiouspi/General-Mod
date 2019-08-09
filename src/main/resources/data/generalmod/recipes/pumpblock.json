@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+	"i i",
+	"pip",
+	"iri"
+  ],
+  "key": {
+	"i": {
+	  "item": "minecraft:iron_ingot"
+	},
+	"r": {
+	  "item": "minecraft:redstone"
+	},
+	"p": {
+	  "item": "generalmod:pipeblock"
+	}
+  },
+  "result": {
+	"item": "generalmod:pumpblock"
+  }
+}

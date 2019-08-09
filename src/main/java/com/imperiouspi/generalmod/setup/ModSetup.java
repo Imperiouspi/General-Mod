@@ -8,7 +8,7 @@ public class ModSetup {
 	public ItemGroup itemGroup = new ItemGroup("generaltab") {
 		@Override
 		public ItemStack createIcon() {
-			return new ItemStack(ModBlocks.CARDTABLEBLOCK);
+			return new ItemStack(ModBlocks.PUMP);
 		}
 	};
 	public void init(){

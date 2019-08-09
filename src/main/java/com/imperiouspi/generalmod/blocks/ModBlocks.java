@@ -8,4 +8,7 @@ public class ModBlocks {
 
 	@ObjectHolder("generalmod:pipeblock")
 	public static PipeBlock PIPE;
+
+	@ObjectHolder("generalmod:pumpblock")
+	public static PumpBlock PUMP;
 }

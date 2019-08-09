@@ -1,5 +1,5 @@
 {
   "variants": {
-    "": {"model": "generalmod:block/cardtableblock"}
+    "": {"model": "generalmod:block/pipeblock"}
   }
 }
