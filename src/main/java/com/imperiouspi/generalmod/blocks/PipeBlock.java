@@ -23,12 +23,12 @@ public class PipeBlock extends Block {
 
     @Override
     public boolean hasTileEntity(BlockState state) {
-        return true;
+        return false;
     }
 
     @Nullable
     @Override
     public TileEntity createTileEntity(BlockState state, IBlockReader world) {
-        return new PipeTE();
+        return null;
     }
 }

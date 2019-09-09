@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+	"iii",
+	"iwi",
+	"iii"
+  ],
+  "key": {
+	"i": {
+	  "item": "minecraft:iron_nugget"
+	},
+	"w": {
+	  "item": "minecraft:bone_meal"
+	}
+  },
+  "result": {
+	"item": "generalmod:brushedaluminumblock"
+  }
+}

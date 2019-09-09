@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+	{
+	  "name": "jadepool",
+	  "rolls": 1,
+	  "entries": [
+		{
+		  "type": "minecraft:item",
+		  "name": "generalmod:jadeblock"
+		}
+	  ],
+	  "conditions": [
+		{
+		  "condition": "minecraft:survives_explosion"
+		}
+	  ]
+	}
+  ]
+}

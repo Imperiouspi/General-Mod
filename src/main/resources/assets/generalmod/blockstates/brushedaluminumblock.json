@@ -1,0 +1,6 @@
+{
+  "variants": {
+	"facing=north": { "model": "generalmod:block/brushedaluminumblock" },
+	"facing=east":  { "model": "generalmod:block/brushedaluminumblock", "y": 90 }
+  }
+}

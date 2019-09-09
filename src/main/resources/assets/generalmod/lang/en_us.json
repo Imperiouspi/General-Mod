@@ -3,6 +3,9 @@
   "block.generalmod.pipeblock": "Pipe",
   "block.generalmod.pumpblock": "Water Pump",
   "block.generalmod.ropeblock": "Rope",
+  "block.generalmod.sheetmetalblock": "Sheet Metal",
+  "block.generalmod.brushedaluminumblock": "Brushed Aluminum",
+  "block.generalmod.jadeblock": "Jade",
 
   "item.generalmod.carditem": "Card",
 

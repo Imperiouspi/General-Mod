@@ -1,0 +1,6 @@
+{
+  "variants": {
+	"facing=north": { "model": "generalmod:block/sheetmetalblock" },
+	"facing=east":  { "model": "generalmod:block/sheetmetalblock", "y": 90 }
+  }
+}

@@ -24,8 +24,10 @@ import net.minecraftforge.fml.event.lifecycle.InterModEnqueueEvent;
 import net.minecraftforge.fml.event.lifecycle.InterModProcessEvent;
 import net.minecraftforge.fml.event.server.FMLServerStartingEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import org.antlr.v4.runtime.LexerNoViableAltException;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.lwjgl.system.CallbackI;
 
 import java.util.stream.Collectors;
 
@@ -63,6 +65,9 @@ public class GeneralMod {
             event.getRegistry().register(new PipeBlock());
             event.getRegistry().register(new PumpBlock());
             event.getRegistry().register(new RopeBlock());
+            event.getRegistry().register(new SheetMetalBlock());
+            event.getRegistry().register(new BrushedAluminumBlock());
+            event.getRegistry().register(new JadeBlock());
         }
 
         @SubscribeEvent
@@ -73,13 +78,11 @@ public class GeneralMod {
             event.getRegistry().register(new BlockItem(ModBlocks.PIPE, prop).setRegistryName("pipeblock"));
             event.getRegistry().register(new BlockItem(ModBlocks.PUMP, prop).setRegistryName("pumpblock"));
             event.getRegistry().register(new BlockItem(ModBlocks.ROPE, prop).setRegistryName("ropeblock"));
+            event.getRegistry().register(new BlockItem(ModBlocks.SHEET_METAL, prop).setRegistryName("sheetmetalblock"));
+            event.getRegistry().register(new BlockItem(ModBlocks.BRUSHED_ALUMINUM, prop).setRegistryName("brushedaluminumblock"));
+            event.getRegistry().register(new BlockItem(ModBlocks.JADE, prop).setRegistryName("jadeblock"));
             //Item Registry
             event.getRegistry().register(new CardItem());
-        }
-
-        @SubscribeEvent
-        public static void onTileEntityRegister(final RegistryEvent.Register<TileEntityType<?>> event) {
-            event.getRegistry().register(TileEntityType.Builder.create(PipeTE::new, ModBlocks.PIPE).build(null).setRegistryName("pipeblock"));
         }
     }
 

@@ -19,4 +19,13 @@ public class ModBlocks {
 
 	@ObjectHolder("generalmod:pipe")
 	public static TileEntityType<PipeTE> PIPE_TE;
+
+	@ObjectHolder("generalmod:sheetmetalblock")
+	public static SheetMetalBlock SHEET_METAL;
+
+	@ObjectHolder("generalmod:brushedaluminumblock")
+	public static BrushedAluminumBlock BRUSHED_ALUMINUM;
+
+	@ObjectHolder("generalmod:jadeblock")
+	public static JadeBlock JADE;
 }
