@@ -1,35 +1,22 @@
 package com.imperiouspi.generalmod;
 
 import com.imperiouspi.generalmod.blocks.*;
-import com.imperiouspi.generalmod.event.RainEvent;
 import com.imperiouspi.generalmod.items.CardItem;
 import com.imperiouspi.generalmod.setup.ClientProxy;
 import com.imperiouspi.generalmod.setup.IProxy;
 import com.imperiouspi.generalmod.setup.ModSetup;
 import com.imperiouspi.generalmod.setup.ServerProxy;
 import net.minecraft.block.Block;
-import net.minecraft.block.Blocks;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
-import net.minecraft.tileentity.TileEntityType;
-import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.DistExecutor;
-import net.minecraftforge.fml.InterModComms;
 import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
-import net.minecraftforge.fml.event.lifecycle.InterModEnqueueEvent;
-import net.minecraftforge.fml.event.lifecycle.InterModProcessEvent;
-import net.minecraftforge.fml.event.server.FMLServerStartingEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import org.antlr.v4.runtime.LexerNoViableAltException;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.lwjgl.system.CallbackI;
-
-import java.util.stream.Collectors;
 
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod("generalmod")
@@ -44,9 +31,6 @@ public class GeneralMod {
     public GeneralMod() {
         // Register the setup method for modloading
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
-        MinecraftForge.EVENT_BUS.register(new WeatherEvents());
-
-        //This should be put in the rain code net.minecraftforge.common.MinecraftForge.EVENT_BUS.post(new RainEvent());
     }
 
     private void setup(final FMLCommonSetupEvent event) {
@@ -83,13 +67,6 @@ public class GeneralMod {
             event.getRegistry().register(new BlockItem(ModBlocks.JADE, prop).setRegistryName("jadeblock"));
             //Item Registry
             event.getRegistry().register(new CardItem());
-        }
-    }
-
-    public static class WeatherEvents {
-        @SubscribeEvent
-        public static void rainListener(){
-
         }
     }
 }
